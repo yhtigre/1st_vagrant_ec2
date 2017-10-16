@@ -1,7 +1,7 @@
 # 1st_vagrant_ec2
 
 ## 概要
-【基本】VagrantでEC2をプロビジョニングする。
+VagrantでEC2をプロビジョニングする。
 
 ## 事前準備
 事前にVagrantの導入、AWSのアカウント登録等が必要。
