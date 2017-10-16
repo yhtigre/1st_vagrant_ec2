@@ -23,5 +23,14 @@ $ vagrant plugin install dotenv
 ### AWSに関する事
 1. AWSアカウントの新規作成
 2. AWSアクセスキーの作成
+3. EC2キーペアの作成(公開鍵)
+4. EC2セキュリティグループの作成
+5. EC2キーペア(秘密鍵)の設置
 
+## 使い方
+1. GitHubリポジトリからローカル環境へクローンする
+
+```Bash
+$ git clone https://github.com/yhtigre/1st_vagrant_ec2.git
+```
 
