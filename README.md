@@ -6,10 +6,12 @@
 ### Vagrantに関する事
 1. Vagrantを導入する
 ###
-`$ sudo yum install vagrant`
+	`$ sudo yum install vagrant`
 
 2. Vagrantプラグインを導入する
 ###
-`$ vagrant plugin install vagrant-aws`
-`$ vagrant plugin install dotenv`
+	`
+$ vagrant plugin install vagrant-aws
+$ vagrant plugin install dotenv
+	`
 
