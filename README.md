@@ -1,4 +1,4 @@
 # 1st_vagrant_ec2
 
-## 【基本】VagrantでEC2をプロビジョニングする。
-
+## 概要
+【基本】VagrantでEC2をプロビジョニングする。
