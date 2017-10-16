@@ -44,7 +44,7 @@ AWS_SECURITY_GROUP = ""
 AWS_SSH_PRIVATE_KEY_PATH = ""
 ```
 
-3. EC2インスタンスを起動する
+3. EC2インスタンスを生成する
 
 ```Bash
 $ vagrant up --provider=aws
@@ -86,5 +86,13 @@ https://aws.amazon.com/amazon-linux-ami/2017.03-release-notes/
 Run "sudo yum update" to apply all updates.
 Amazon Linux version 2017.09 is available.
 [ec2-user@ip-172-31-18-142 ~]$
+```
+
+5. EC2インスタンスを破棄する
+
+```Bash
+$ vagrant destroy -f
+==> default: Terminating the instance...
+$
 ```
 
