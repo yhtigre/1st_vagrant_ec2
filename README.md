@@ -34,7 +34,7 @@ $ vagrant plugin install dotenv
 $ git clone https://github.com/yhtigre/1st_vagrant_ec2.git
 ```
 
-2. .envファイルの環境変数にパラメータを設定する
+2. .envファイルの環境変数へパラメータを設定する
 
 ```Bash
 AWS_ACCESS_KEY_ID = ""
@@ -69,6 +69,22 @@ Bringing machine 'default' up with 'aws' provider...
 ==> default: Waiting for SSH to become available...
 ==> default: Machine is booted and ready for use!
 ==> default: Rsyncing folder: /home/yh/waste/1st_vagrant_ec2/samples/ => /vagrant
+$
 ```
 
+4. EC2インスタンスへSSHログインする
+
+```Bash
+$ vagrant ssh
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2017.03-release-notes/
+11 package(s) needed for security, out of 26 available
+Run "sudo yum update" to apply all updates.
+Amazon Linux version 2017.09 is available.
+[ec2-user@ip-172-31-18-142 ~]$
+```
 
