@@ -6,7 +6,7 @@
 ## 事前準備
 事前にVagrantの導入、AWSのアカウント登録等が必要。
 
-#### Vagrantに関する事
+### Vagrantに関する事
 1. Vagrantを導入する
 
 ```Bash
@@ -20,7 +20,7 @@ $ vagrant plugin install vagrant-aws
 $ vagrant plugin install dotenv
 ```
 
-#### AWSに関する事
+### AWSに関する事
 1. AWSアカウントの新規作成
 2. AWSアクセスキーの作成
 3. EC2キーペアの作成(公開鍵)
@@ -33,4 +33,42 @@ $ vagrant plugin install dotenv
 ```Bash
 $ git clone https://github.com/yhtigre/1st_vagrant_ec2.git
 ```
+
+2. .envファイルの環境変数にパラメータを設定する
+
+```Bash
+AWS_ACCESS_KEY_ID = ""
+AWS_SECRET_ACCESS_KEY = ""
+AWS_KEYPAIR_NAME = ""
+AWS_SECURITY_GROUP = ""
+AWS_SSH_PRIVATE_KEY_PATH = ""
+```
+
+3. EC2インスタンスを起動する
+
+```Bash
+$ vagrant up --provider=aws
+Bringing machine 'default' up with 'aws' provider...
+==> default: Warning! The AWS provider doesn't support any of the Vagrant
+==> default: high-level network configurations (`config.vm.network`). They
+==> default: will be silently ignored.
+==> default: Launching an instance with the following settings...
+==> default:  -- Type: t2.micro
+==> default:  -- AMI: ami-4af5022c
+==> default:  -- Region: ap-northeast-1
+==> default:  -- Keypair: vagrant
+==> default:  -- Security Groups: ["vagrant"]
+==> default:  -- Block Device Mapping: []
+==> default:  -- Terminate On Shutdown: false
+==> default:  -- Monitoring: false
+==> default:  -- EBS optimized: false
+==> default:  -- Source Destination check: 
+==> default:  -- Assigning a public IP address in a VPC: false
+==> default:  -- VPC tenancy specification: default
+==> default: Waiting for instance to become "ready"...
+==> default: Waiting for SSH to become available...
+==> default: Machine is booted and ready for use!
+==> default: Rsyncing folder: /home/yh/waste/1st_vagrant_ec2/samples/ => /vagrant
+```
+
 
